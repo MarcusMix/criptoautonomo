@@ -29,6 +29,13 @@ header {
 	align-items: center;
 }
 
+.header-content h3{
+	@media (max-width: 768px) {
+		font-size: 14px;
+		text-align: center;
+	}
+}
+
 .logo img {
 	width: 400px;
 }
@@ -58,6 +65,8 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
+	flex: 2;
 }
 
 .card {
@@ -172,11 +181,6 @@ main {
 .duvidas-frequentes {
 	text-align: center;
 	padding: 20px;
-	/*display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 800px;
-	flex-direction: column; */
 }
 
 .duvidas-frequentes h1 {
@@ -232,4 +236,17 @@ footer {
 	justify-content: center;
 	height: 120px;
 	box-shadow: rgba(0, 0, 0, 0.05) 2px 1px 2px 2px;
+}
+
+@media screen and (max-width: 768px) {
+	.container-xl {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container-xl img {
+		max-width: 50%;
+	}
 }
