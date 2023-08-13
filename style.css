@@ -1,0 +1,235 @@
+* {
+	font-family: Poppins;
+	padding: 0;
+	margin: 0;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* min-height: 100vh; */
+}
+
+body {
+	background-color: #f7f7f7;
+	color: #5c5a5a;
+}
+
+.canva1 {
+	height:  100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header {
+	background-color: #f7f7f7;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo img {
+	width: 400px;
+}
+
+.subtitle {
+	display: flex;
+	height: 220px;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	flex-direction: column;
+}
+
+.subtitle h1 {
+	font-size: 2.3rem;
+	font-weight: 700;
+}
+
+.subtitle p {
+	font-size: 1.5rem;
+	width: 1200px;
+	color: #5c5a5a;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	margin: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.container-xl {
+	display: flex;
+	align-items: center;
+}
+
+.group-apresentation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text-apresentation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.buy {
+	align-self: baseline;
+	border: none;
+	background-color: darkorange;
+	padding: 7px;
+	border-radius: 25px;
+	box-shadow: rgba(100, 100, 111, 0.349) 0px 7px 29px 0px;
+}
+
+.text-apresentation h1 {
+	font-size: 40px;
+}
+
+.image-apresentation {
+	max-width: 600px;
+}
+
+.image-apresentation img {
+	max-width: 400px;
+}
+
+.card {
+	border: none;
+	border-radius: 25px;
+	text-align: start;
+}
+
+.card p {
+	font-size: 0.9rem;
+}
+
+.card img {
+	width: 5rem; 
+	align-self: baseline;
+	margin:  20px;
+}
+
+.emp-container {
+	margin-top: 7%;
+}
+
+.emp-container h1 {
+	color: #000;
+}
+
+.motivos {
+	margin-top: 50px;
+	background-color: #dbfff6;
+	box-shadow: rgba(0, 0, 0, 0.212) 0px 1px 2px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:  250px;
+	flex-direction: column;
+}
+
+.motivos h1{
+	color: #000;
+	font-weight: 700;
+}
+
+.motivos-detalhados {
+	padding: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.motivos-detalhados h2 {
+	font-size: 40px;
+	font-weight: 800;
+	color: #000;
+}
+
+.motivos-detalhados p {
+	font-size: 24px;
+}
+
+.motivos-detalhados div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 250px;
+}
+
+.duvidas-frequentes {
+	text-align: center;
+	padding: 20px;
+	/*display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 800px;
+	flex-direction: column; */
+}
+
+.duvidas-frequentes h1 {
+	font-size: 40px;
+	font-weight: 800;
+	color: #5c5a5a;
+	padding: 20px;
+}
+
+.accord {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.preparado {
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.preparado div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: 300px;
+	border-radius: 20px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.preparado h1 {
+	font-size: 40px;
+	font-weight: 800;
+	padding: 20px;
+	color: #5c5a5a;
+	text-align: center;
+}
+
+.preparado button {
+	align-self: center;
+	padding: 25px;
+	font-size: 20px;
+	box-shadow: rgba(100, 100, 111, 0.349) 0px 7px 29px 0px;
+}
+
+footer {
+	margin-top: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	box-shadow: rgba(0, 0, 0, 0.05) 2px 1px 2px 2px;
+}
