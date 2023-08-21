@@ -22,22 +22,21 @@ body {
 }
 
 .canva1 {
-	height:  100vh;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 header {
-	background-color: var(--cor-de-fundo);
 	height: 200px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.header-content h3{
+.header-content h3 {
 	@media (max-width: 768px) {
 		font-size: 14px;
 		text-align: center;
@@ -45,7 +44,7 @@ header {
 }
 
 .logo img {
-	height:  170px;
+	height: 170px;
 }
 
 .subtitle {
@@ -66,7 +65,7 @@ header {
 .subtitle p {
 	font-size: var(--tamanho-fonte-pequena);
 	width: 1200px;
-	color:var(--cor-fonte-secundária);
+	color: var(--cor-fonte-secundária);
 	text-align: center;
 }
 
@@ -80,7 +79,34 @@ main {
 
 .card {
 	margin: 1rem;
-	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+	box-shadow: rgba(255, 255, 255, 0.658) 0px 1px 2px 0px;
+}
+
+.hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	transition: all 1s;
+}
+
+.hidden-inv {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(+100%);
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+.card:nth-child(2) {
+	transition-delay: 200ms;
+}
+.card:nth-child(3) {
+	transition-delay: 400ms;
 }
 
 .container-xl {
@@ -131,18 +157,18 @@ main {
 }
 
 .card h4 {
-	color: var(--cor-fonte-dark)
+	color: var(--cor-fonte-dark);
 }
 
 .card p {
 	font-size: var(--tamanho-fonte-card);
-	color: var(--cor-fonte-dark)
+	color: var(--cor-fonte-dark);
 }
 
 .card img {
-	width: 5rem; 
+	width: 5rem;
 	align-self: baseline;
-	margin:  20px;
+	margin: 20px;
 }
 
 .emp-container {
@@ -160,7 +186,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height:  250px;
+	height: 250px;
 	flex-direction: column;
 }
 
@@ -236,7 +262,7 @@ main {
 	flex-direction: column;
 }
 
-.card-text h4, 
+.card-text h4,
 .card-text p {
 	color: var(--cor-fonte-primaria);
 }

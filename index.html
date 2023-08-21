@@ -6,17 +6,23 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+
+		<!-- BOOTSTRAP -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
+
+		<!-- FAVICON -->
 		<link
 			rel="shortcut icon"
 			href="img/favicon.ico"
 			type="image/x-icon"
 		/>
+
+		<!-- CSS VANILLA -->
 		<link rel="stylesheet" href="style.css" />
 		<title>Curso Cripto Autônomo</title>
 	</head>
@@ -48,14 +54,21 @@
 							transformaram seu futuro financeiro.
 						</p>
 					</div>
-					<!-- <button class="buy">Compre agora</button> -->
 				</div>
 				<div class="image-apresentation">
-					<img src="img/imagem-inicial.jpeg" alt="" />
+					<lord-icon
+						src="https://cdn.lordicon.com/swvqwdea.json"
+						trigger="loop"
+						colors="outline:#181730,primary:#b26836,secondary:#ffc738"
+						state="loop"
+						style="width: 250px; height: 250px"
+					>
+					</lord-icon>
+					<!-- <img src="img/imagem-inicial.jpeg" alt="" /> -->
 				</div>
 			</div>
 		</div>
-		<div class="subtitle">
+		<div class="subtitle hidden">
 			<h1>Principais recursos do Curso Cripto Autônomo</h1>
 			<p>
 				Conheça os principais recursos que fazem do Cripto
@@ -64,7 +77,7 @@
 			</p>
 		</div>
 		<main>
-			<div class="card" style="width: 18rem">
+			<div class="card hidden" style="width: 18rem">
 				<img
 					src="img/curriculum.png"
 					class="card-img-top"
@@ -80,7 +93,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="card" style="width: 18rem">
+			<div class="card hidden" style="width: 18rem">
 				<img
 					src="img/interativo.png"
 					class="card-img-top"
@@ -96,7 +109,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="card" style="width: 18rem">
+			<div class="card hidden" style="width: 18rem">
 				<img
 					src="img/lifetime.png"
 					class="card-img-top"
@@ -115,7 +128,7 @@
 			</div>
 		</main>
 		<main>
-			<div class="card" style="width: 18rem">
+			<div class="card hidden" style="width: 18rem">
 				<img
 					src="img/expert.png"
 					class="card-img-top"
@@ -132,7 +145,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="card" style="width: 18rem">
+			<div class="card hidden" style="width: 18rem">
 				<img
 					src="img/rede.png"
 					class="card-img-top"
@@ -148,7 +161,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="card" style="width: 18rem">
+			<div class="card hidden" style="width: 18rem">
 				<img
 					src="img/caderno.png"
 					class="card-img-top"
@@ -167,7 +180,7 @@
 			</div>
 		</main>
 
-		<div class="container-xl emp-container">
+		<div class="container-xl emp-container hidden">
 			<div class="suport">
 				<div class="text-suport">
 					<h1>Suporte Personalizado</h1>
@@ -180,12 +193,12 @@
 					</p>
 				</div>
 			</div>
-			<div class="image-apresentation">
+			<div class="image-apresentation hidden">
 				<img src="img/suporte.jpeg" alt="" />
 			</div>
 		</div>
 
-		<div class="container-xl emp-container">
+		<div class="container-xl emp-container hidden">
 			<div class="image-apresentation">
 				<img src="img/bonus.jpeg" alt="" />
 			</div>
@@ -195,25 +208,28 @@
 					<p>
 						Tenha acesso a 3 bônus exclusivos que irão
 						aprimorar sua experiência de aprendizado.
-						Esses bônus incluem Termos usados no mundo das Criptomoedas, Rendimento
-						com  Criptomoedas e Day Trade.
+						Esses bônus incluem Termos usados no mundo
+						das Criptomoedas, Rendimento com
+						Criptomoedas e Day Trade.
 					</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="container-xl emp-container">
+		<div class="container-xl emp-container hidden">
 			<div class="suport">
 				<div class="text-suport">
 					<h1>13 Aulas de Aprofundamento</h1>
 					<p>
-						Em apenas 13 aulas você tera o conhecimento necessário
-						para fazer negociações de criptomoedas, comprando e vendendo de foma segura e 
-						descomplicada, podendo também acessar vídeos sobre dúvidas.
+						Em apenas 13 aulas você tera o conhecimento
+						necessário para fazer negociações de
+						criptomoedas, comprando e vendendo de foma
+						segura e descomplicada, podendo também
+						acessar vídeos sobre dúvidas.
 					</p>
 				</div>
 			</div>
-			<div class="image-apresentation">
+			<div class="image-apresentation hidden">
 				<img src="img/aulas.jpeg" alt="" />
 			</div>
 		</div>
@@ -244,7 +260,7 @@
 			<div>
 				<div style="display: flex; flex-direction: row">
 					<h2>+</h2>
-					<h2 class="num" data-val="8">0</h2>
+					<h2 class="num" data-val="7">0</h2>
 				</div>
 				<p>Anos de Experiência</p>
 			</div>
@@ -260,7 +276,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header">
 							<button
-								class="accordion-button collapsed text-secondary bg-white"
+								class="accordion-button collapsed text-dark"
 								type="button"
 								data-bs-toggle="collapse"
 								data-bs-target="#flush-collapseOne"
@@ -273,7 +289,7 @@
 						</h2>
 						<div
 							id="flush-collapseOne"
-							class="accordion-collapse collapse"
+							class="accordion-collapse collapse text-dark"
 							data-bs-parent="#accordionFlushExample"
 						>
 							<div class="accordion-body">
@@ -289,7 +305,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header">
 							<button
-								class="accordion-button collapsed text-black bg-white"
+								class="accordion-button collapsed text-dark"
 								type="button"
 								data-bs-toggle="collapse"
 								data-bs-target="#flush-collapseTwo"
@@ -302,7 +318,7 @@
 						</h2>
 						<div
 							id="flush-collapseTwo"
-							class="accordion-collapse collapse text-secondary bg-white"
+							class="accordion-collapse collapse text-dark"
 							data-bs-parent="#accordionFlushExample"
 						>
 							<div class="accordion-body">
@@ -316,7 +332,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header">
 							<button
-								class="accordion-button collapsed text-secondary bg-white"
+								class="accordion-button collapsed text-dark"
 								type="button"
 								data-bs-toggle="collapse"
 								data-bs-target="#flush-collapseThree"
@@ -328,7 +344,7 @@
 						</h2>
 						<div
 							id="flush-collapseThree"
-							class="accordion-collapse collapse text-secondary bg-white"
+							class="accordion-collapse collapse text-dark"
 							data-bs-parent="#accordionFlushExample"
 						>
 							<div class="accordion-body">
@@ -345,7 +361,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header">
 							<button
-								class="accordion-button collapsed text-secondary bg-white"
+								class="accordion-button collapsed text-dark"
 								type="button"
 								data-bs-toggle="collapse"
 								data-bs-target="#flush-collapseSix"
@@ -358,7 +374,7 @@
 						</h2>
 						<div
 							id="flush-collapseSix"
-							class="accordion-collapse collapse text-secondary bg-white"
+							class="accordion-collapse collapse text-dark"
 							data-bs-parent="#accordionFlushExample"
 						>
 							<div class="accordion-body">
@@ -372,7 +388,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header">
 							<button
-								class="accordion-button collapsed text-secondary bg-white"
+								class="accordion-button collapsed text-dark"
 								type="button"
 								data-bs-toggle="collapse"
 								data-bs-target="#flush-collapseFour"
@@ -386,7 +402,7 @@
 						<div
 							bg-white
 							id="flush-collapseFour"
-							class="accordion-collapse collapse text-secondary bg-white"
+							class="accordion-collapse collapse text-dark"
 							data-bs-parent="#accordionFlushExample"
 						>
 							<div class="accordion-body">
@@ -406,10 +422,11 @@
 		<div class="preparado">
 			<div>
 				<h1>
-					Liberte-se do comodismo e construa o seu furuto promissor!
+					Liberte-se do comodismo e construa o seu furuto
+					promissor!
 				</h1>
 			</div>
-			<div class="cards-shop">
+			<div class="cards-shop hidden">
 				<div class="card bg-dark" style="width: 18rem">
 					<div class="card-head">
 						<img
@@ -428,18 +445,24 @@
 					</div>
 					<button class="buy">Comprar</button>
 				</div>
-					<!-- Outros cards -->
-				</div>
+				<!-- Outros cards -->
 			</div>
+		</div>
 		<footer>
 			<p>Todos direitos reservados Curso Cripto Autônomo &copy;</p>
 		</footer>
 	</body>
+
+	<!-- BOOTSTRAP -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"
 	></script>
 
-	<script src="script.js"></script>
+	<!-- SVG ANIMATION -->
+	<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+	<!-- SCRIPTS -->
+	<script defer src="script.js"></script>
 </html>

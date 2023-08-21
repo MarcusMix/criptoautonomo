@@ -39,3 +39,21 @@ function contador() {
 		}, duracao);
 	});
 }
+
+
+// Animações
+
+const observar = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		console.log(entry)
+		if(entry.isIntersecting) {
+			entry.target.classList.add('show')
+		} else {
+			entry.target.classList.remove('show')
+		}
+	})
+})
+
+const cartas = document.querySelectorAll('.hidden')
+
+cartas.forEach((elementos) => observar.observe(elementos))
