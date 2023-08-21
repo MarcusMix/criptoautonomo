@@ -89,13 +89,6 @@ main {
 	transition: all 1s;
 }
 
-.hidden-inv {
-	opacity: 0;
-	filter: blur(5px);
-	transform: translateX(+100%);
-	transition: all 1s;
-}
-
 .show {
 	opacity: 1;
 	filter: blur(0);
@@ -327,6 +320,18 @@ footer {
 	}
 
 	.container-xl img {
-		max-width: 50%;
+		max-width: 60%;
 	}
+
+	.emp-container {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#image-change {
+		order: 1;
+	}
+	
 }
