@@ -120,7 +120,6 @@ main {
 .card {
 	margin: 1rem;
 	box-shadow: rgba(255, 255, 255, 0.658) 0px 1px 2px 0px;
-	height: 350px;
 }
 
 .hidden {
@@ -162,18 +161,24 @@ main {
 }
 
 .buy {
+	width: 90%;
+	margin: 10px;
 	align-self: baseline;
 	border: none;
 	background-color: #FFC300;
 	border-radius: 25px;
+	box-shadow: 0 7px 50px 10px #000000aa;
+	transition: all 0.3s ease 0s;
 }
 
 .buy:hover {
-	/* border: 1px solid #ffffff44; */
-    box-shadow: 0 7px 50px 10px #000000aa;
-    transform: scale(1.015);
-    filter: brightness(1.2);
+	box-shadow: 0 7px 50px 10px #000000aa;
 	transition: .7s all;
+	transform: translateY(-7px);
+}
+
+.buy:active {
+	transform: translateY(-1px);
 }
 
 .text-apresentation h1 {
@@ -192,6 +197,10 @@ main {
 	border: none;
 	border-radius: 25px;
 	text-align: start;
+}
+
+.card-size {
+	height: 350px;
 }
 
 .card h4 {
@@ -362,6 +371,7 @@ main {
 
 .card-text h4,
 .card-text p {
+	font-size: 20px;
 	color: var(--cor-fonte-primaria);
 }
 
@@ -382,14 +392,19 @@ main {
 	color: #00ff0d;
 	font-size: 50px;
 	font-weight: var(--espessura-fonte-grande);
+	text-align: center;
 }
 
 .card-head h3 {
-	margin: 10px;
-	border: 2px solid #00ff0d;
+	margin: -10px 10px 25px 0;
+	writing-mode: tb-rl;
+	transform: rotate(-55deg);
+	background-color: #55e05c;
+	box-shadow: rgba(0, 0, 0, 0.356) 2px 1px 20px 2px;
 	color: var(--cor-fonte-primaria);
 	border-radius: 10px;
-	padding: 5px;
+	padding: 15px;
+	text-transform: uppercase;
 }
 
 .preparado h1 {
@@ -402,8 +417,9 @@ main {
 
 .preparado button {
 	align-self: center;
-	padding: 25px;
+	padding: 20px;
 	font-size: 20px;
+	margin-bottom: 15px;
 }
 
 footer {
