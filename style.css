@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 :root {
 	--cor-de-fundo: #000;
 	--cor-de-fundo-destaque: #dbfff6;
@@ -12,7 +15,7 @@
 }
 
 * {
-	font-family: Poppins;
+	font-family: 'Outfit';
 	padding: 0;
 	margin: 0;
 }
@@ -27,14 +30,29 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	background-image: url('img/wallpaper\ 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: -2px -7px 31px 36px rgba(0,0,0,0.84) inset;
+	-webkit-box-shadow: -2px -7px 31px 36px rgba(0,0,0,0.84) inset;
+	-moz-box-shadow: -2px -7px 31px 36px rgba(0,0,0,0.84) inset;
 }
 
 header {
-	height: 200px;
+	height: 170px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
+	padding: 0 50px;
 	align-items: center;
 	justify-content: space-between;
+	background-color: var(--cor-de-fundo);
+	box-shadow: rgb(0, 0, 0) 0px 40px 50px;
+}
+
+.text-apresentation {
+	color: var(--cor-fonte-primaria);
 }
 
 .pin-icon {
@@ -58,7 +76,7 @@ header h3 {
 }
 
 .header-content h3 {
-	font-size: 20px;
+	font-size: 15px;
 
 	@media (max-width: 768px) {
 		font-size: var(--tamanho-fonte-muito-pequena);
@@ -75,7 +93,6 @@ header h3 {
 	height: 220px;
 	align-items: center;
 	justify-content: center;
-	color: var(--cor-fonte-primaria);
 	flex-direction: column;
 }
 
@@ -147,12 +164,16 @@ main {
 .buy {
 	align-self: baseline;
 	border: none;
-	background-color: darkorange;
-	padding: 7px;
-	margin: 15px;
+	background-color: #FFC300;
 	border-radius: 25px;
-	width: 90%;
-	box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+}
+
+.buy:hover {
+	/* border: 1px solid #ffffff44; */
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.015);
+    filter: brightness(1.2);
+	transition: .7s all;
 }
 
 .text-apresentation h1 {
@@ -383,7 +404,6 @@ main {
 	align-self: center;
 	padding: 25px;
 	font-size: 20px;
-	box-shadow: rgba(100, 100, 111, 0.349) 0px 7px 29px 0px;
 }
 
 footer {
