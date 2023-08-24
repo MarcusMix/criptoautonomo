@@ -7,11 +7,12 @@
 	--cor-fonte-primaria: #fff;
 	--cor-fonte-secundária: #f7f7f7d2;
 	--cor-fonte-dark: #000;
+	--cor-fonte-destaque: #FFD60A;
 	--tamanho-fonte-grande: 2.3rem;
 	--tamanho-fonte-pequena: 1.5rem;
 	--tamanho-fonte-muito-pequena: 14px;
 	--tamanho-fonte-card: 0.9rem;
-	--espessura-fonte-grande: 700;
+		--espessura-fonte-grande: 700; 
 }
 
 * {
@@ -51,8 +52,25 @@ header {
 	box-shadow: rgb(0, 0, 0) 0px 40px 50px;
 }
 
-.text-apresentation {
+.text-apresentation h1 {
+	text-align: left;
+	display: block;
+	text-transform: uppercase;
 	color: var(--cor-fonte-primaria);
+	font-weight: var(--espessura-fonte-grande);
+	line-height: 0.8;
+}
+
+.text-apresentation p {
+	margin-top: 17px;
+	font-size: 18px;
+	line-height: 0.3;
+}
+
+.group-apresentation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .pin-icon {
@@ -73,6 +91,10 @@ header h3 {
 
 #apresentation {
 	margin-top: 7%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
 }
 
 .header-content h3 {
@@ -86,6 +108,12 @@ header h3 {
 
 .logo img {
 	height: 170px;
+}
+
+.lord-icon {
+	/* padding: 15px; */
+	margin: 25px 0;
+	align-self: center;
 }
 
 .subtitle {
@@ -104,7 +132,7 @@ header h3 {
 
 .subtitle p {
 	font-size: var(--tamanho-fonte-pequena);
-	width: 1200px;
+	width: 800px;
 	color: var(--cor-fonte-secundária);
 	text-align: center;
 }
@@ -119,7 +147,7 @@ main {
 
 .card {
 	margin: 1rem;
-	box-shadow: rgba(255, 255, 255, 0.658) 0px 1px 2px 0px;
+	box-shadow: rgba(255, 255, 255, 0.445) 0px 1px 4px 0px;
 }
 
 .hidden {
@@ -147,25 +175,12 @@ main {
 	align-items: center;
 }
 
-.group-apresentation {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.text-apresentation {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
 .buy {
 	width: 90%;
 	margin: 10px;
 	align-self: baseline;
 	border: none;
-	background-color: #FFC300;
+	background-color: var(--cor-fonte-destaque);
 	border-radius: 25px;
 	box-shadow: 0 7px 50px 10px #000000aa;
 	transition: all 0.3s ease 0s;
@@ -204,12 +219,12 @@ main {
 }
 
 .card h4 {
-	color: var(--cor-fonte-dark);
+	color: var(--cor-fonte-primaria);
 }
 
 .card p {
 	font-size: var(--tamanho-fonte-card);
-	color: var(--cor-fonte-dark);
+	color: var(--cor-fonte-secundária);
 }
 
 .card img {
@@ -226,51 +241,6 @@ main {
 	color: var(--cor-fonte-primaria);
 }
 
-#apresentacao {
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: column;
-	height: 400px;
-	width: 600px;
-}
-
-#apresentacao h1 {
-	text-align: center;
-	border-bottom: 1px solid var(--cor-fonte-secundária);
-}
-
-.quem-sou-eu {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-	width: 100%;
-	margin: 40px auto;
-}
-
-.quem-sou-eu div {
-	min-width: 600px;
-}
-
-.quem-sou-eu-imagem {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.quem-sou-eu-imagem img {
-	width: 400px;
-	margin: auto;
-}
-
-.professor {
-	color: #000;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	color: var(--cor-fonte-primaria);
-}
 
 .motivos {
 	/* background-color: var(--cor-de-fundo-destaque); */
@@ -286,6 +256,19 @@ main {
 .motivos-detalhados div div {
 	display: flex; 
 	flex-direction: row
+}
+
+.professor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1000px;
+	padding: 20px;
+	margin: auto;
+}
+
+#apresentacao {
+	padding: 10px;
 }
 
 .motivos p {
@@ -439,13 +422,40 @@ footer {
 		align-items: center;
 	}
 
+	.text-apresentation h1 {
+		font-size: 30px;
+		line-height: 1;
+	}
+	
+	.text-apresentation p {
+		line-height: 1;
+		padding: 0;
+		margin-top: 0;
+	}
+
 	.subtitle {
 		text-align: center;
+		font-size: 17px;
+		margin:  5px;
+		text-align: left;
 	}
 
 	.subtitle p {
 		font-size: var(--tamanho-fonte-muito-pequena);
 		width: 400px;
+		text-align: left;
+		padding: 10px;
+	}
+
+	.image-apresentation {
+		display: flex;
+		justify-content: center;
+	}
+
+	.emp-container {
+		border: 1px solid var(--cor-fonte-destaque);
+		border-radius: 10px;
+		padding: 10px;
 	}
 
 	.header-infos {
@@ -453,7 +463,7 @@ footer {
 	}
 
 	.container-xl img {
-		max-width: 60%;
+		max-width: 70%;
 	}
 
 	.emp-container {
@@ -463,50 +473,22 @@ footer {
 		align-items: center;
 	}
 
-	section {
-		max-width: 500px;
+	.professor {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 400px;
+		padding: 20px;
+		margin: auto;
 	}
 
 	#image-change {
 		order: 1;
 	}
 
-	.quem-sou-eu {
-		width: 200px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-	}
-
-	.quem-sou-eu div {
-		width: 200px;
-	}
-
-	.quem-sou-eu-imagem img {
-		max-width: 200px;
-	}
-	
-	/* ARRUMAR VAZAMENTO */
-	#apresentacao {
-		width: 200px;
-		height: 200px;
-	}
-
-	#apresentacao div {
-		width: 100vw;
-		/* background-color: aqua; */
-	}
-	
-	#apresentacao div h1 {
-		font-size: var(--tamanho-fonte-pequena);
-		border-bottom: none;
-	}
-	
-	#apresentacao div p {
-		/* width: 200px; */
-		font-size: var(--tamanho-fonte-muito-pequena);
-		text-align: center;
+	.motivos {
+		margin: 10px;
 	}
 
 	.motivos-detalhados div div h2{
@@ -517,4 +499,10 @@ footer {
 		flex-direction: column;
 		padding: 10px;
 	}
+
+	/* .motivos-detalhados div {
+		flex-direction: row;
+		padding: 0;
+		margin: 0;
+	} */
 }
