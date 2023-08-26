@@ -8,6 +8,7 @@
 	--cor-fonte-secundária: #f7f7f7d2;
 	--cor-fonte-dark: #000;
 	--cor-fonte-destaque: #FFD60A;
+	--cor-botao: -webkit-linear-gradient(#FFD60A, #faad07);
 	--tamanho-fonte-grande: 2.3rem;
 	--tamanho-fonte-pequena: 1.5rem;
 	--tamanho-fonte-muito-pequena: 14px;
@@ -61,6 +62,13 @@ header {
 	line-height: 0.8;
 }
 
+#h1-destaque, .motivos h1 {
+	text-transform: uppercase;
+	background: -webkit-linear-gradient(#FFD60A, #ffc037);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .text-apresentation p {
 	margin-top: 17px;
 	font-size: 18px;
@@ -111,7 +119,6 @@ header h3 {
 }
 
 .lord-icon {
-	/* padding: 15px; */
 	margin: 25px 0;
 	align-self: center;
 }
@@ -180,7 +187,7 @@ main {
 	margin: 10px;
 	align-self: baseline;
 	border: none;
-	background-color: var(--cor-fonte-destaque);
+	background: var(--cor-botao);
 	border-radius: 25px;
 	box-shadow: 0 7px 50px 10px #000000aa;
 	transition: all 0.3s ease 0s;
@@ -262,13 +269,27 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 1000px;
+	max-width: 1350px;
 	padding: 20px;
 	margin: auto;
 }
 
+.professor img {
+	max-width: 600px;
+	margin: 10px;
+}
+
+.professor-imagem {
+	max-width: 100%;
+	
+}
+
 #apresentacao {
 	padding: 10px;
+}
+
+#apresentacao div p {
+	text-align: justify;
 }
 
 .motivos p {
@@ -278,7 +299,7 @@ main {
 .motivos h1 {
 	font-size: var(--tamanho-fonte-grande);
 	font-weight: var(--espessura-fonte-grande);
-	color: var(--cor-fonte-primaria);
+	color: var(--cor-fonte-destaque);
 }
 
 .image-cripto {
@@ -414,6 +435,13 @@ footer {
 	box-shadow: rgba(0, 0, 0, 0.05) 2px 1px 2px 2px;
 }
 
+@media screen and (max-width: 1215px) {
+	.professor img {
+		width: 450px;
+	}
+}
+
+
 @media screen and (max-width: 768px) {
 	.container-xl {
 		flex-direction: column;
@@ -478,9 +506,22 @@ footer {
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		width: 400px;
-		padding: 20px;
-		margin: auto;
+		padding: 0;
+		margin: 0;
+	}
+
+	.professor p {
+		padding: 0 20px;
+	}
+	
+	.professor h1 {
+		padding: 0 20px;
+	}
+
+	.professor img {
+		width: 100%;
+		margin: 20px 0;
+		padding: 0;
 	}
 
 	#image-change {
@@ -493,6 +534,14 @@ footer {
 
 	.motivos-detalhados div div h2{
 		font-size: var(--tamanho-fonte-pequena);
+	}
+
+	.motivos-unico {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: nowrap;
 	}
 
 	.motivos-detalhados  {
