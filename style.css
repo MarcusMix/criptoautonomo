@@ -32,7 +32,7 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	background-image: url('img/wallpaper\ 2.png');
+	background-image: url('img/wallpaper.png');
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
@@ -304,7 +304,7 @@ main {
 
 .image-cripto {
 	width: 100%;
-	background-image: url('img/cripto.png');
+	background-image: url('img/criptomoeda.png');
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
