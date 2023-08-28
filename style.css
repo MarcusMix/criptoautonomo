@@ -9,11 +9,12 @@
 	--cor-fonte-dark: #000;
 	--cor-fonte-destaque: #FFD60A;
 	--cor-botao: -webkit-linear-gradient(#FFD60A, #faad07);
+	--cor-botao-disable: -webkit-linear-gradient(#c0ac4b, #a07a2a);
 	--tamanho-fonte-grande: 2.3rem;
 	--tamanho-fonte-pequena: 1.5rem;
 	--tamanho-fonte-muito-pequena: 14px;
 	--tamanho-fonte-card: 0.9rem;
-		--espessura-fonte-grande: 700; 
+	--espessura-fonte-grande: 700; 
 }
 
 * {
@@ -193,6 +194,10 @@ main {
 	transition: all 0.3s ease 0s;
 }
 
+.buy-disable {
+	background: var(--cor-botao-disable);
+}
+
 .buy:hover {
 	box-shadow: 0 7px 50px 10px #000000aa;
 	transition: .7s all;
@@ -366,6 +371,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .card-body {
@@ -375,14 +381,30 @@ main {
 
 .card-text h4,
 .card-text p {
-	font-size: 20px;
+	font-size: 18px;
 	color: var(--cor-fonte-primaria);
+}
+
+.card-sales {
+	height: 710px;
 }
 
 .card-head {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.preco {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 5px;
+}
+
+.preco span {
+	font-size: 20px;
 }
 
 .old-price {
@@ -392,8 +414,8 @@ main {
 	font-size: 25px;
 }
 
-.new-price {
-	color: #00ff0d;
+#new-price {
+	color: var(--cor-fonte-destaque);
 	font-size: 50px;
 	font-weight: var(--espessura-fonte-grande);
 	text-align: center;
@@ -409,6 +431,22 @@ main {
 	border-radius: 10px;
 	padding: 15px;
 	text-transform: uppercase;
+}
+
+.card-text-disable p,
+.card-text-disable h4 {
+	color: var(--cor-fonte-secundária);
+}
+
+#lote {
+	background-color: #669968;
+}
+
+.sales-unsucess {
+	display: flex; 
+	flex-direction: column; 
+	align-items: center;
+	margin-top: 105px;
 }
 
 .preparado h1 {
