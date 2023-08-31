@@ -116,7 +116,7 @@ header h3 {
 }
 
 .logo img {
-	height: 170px;
+	height: 130px;
 }
 
 .lord-icon {
@@ -366,6 +366,11 @@ main {
 	flex-direction: column;
 }
 
+.preparado div h1 {
+	color: var(--cor-fonte-destaque);
+	text-transform: uppercase;
+}
+
 .cards-shop {
 	display: flex;
 	align-items: center;
@@ -393,6 +398,11 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.card-head img {
+	width: 200px;
+	align-self:center;
 }
 
 .preco {
@@ -446,7 +456,7 @@ main {
 	display: flex; 
 	flex-direction: column; 
 	align-items: center;
-	margin-top: 105px;
+	margin-top: 50px;
 }
 
 .preparado h1 {
@@ -519,7 +529,6 @@ footer {
 	}
 
 	.emp-container {
-		border: 1px solid var(--cor-fonte-destaque);
 		border-radius: 10px;
 		padding: 10px;
 	}
@@ -553,11 +562,12 @@ footer {
 	}
 	
 	.professor h1 {
-		padding: 0 20px;
+		text-align: center;
 	}
 
 	.professor img {
 		width: 100%;
+		/* margin: auto; */
 		margin: 20px 0;
 		padding: 0;
 	}
