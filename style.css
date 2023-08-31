@@ -518,7 +518,7 @@ footer {
 
 	.subtitle p {
 		font-size: var(--tamanho-fonte-muito-pequena);
-		width: 400px;
+		width: 350px;
 		text-align: left;
 		padding: 10px;
 	}
@@ -577,7 +577,11 @@ footer {
 	}
 
 	.motivos {
-		margin: 10px;
+		width: 100vw;
+	}
+
+	.motivos h1,.motivos p {
+		padding: 5px;
 	}
 
 	.motivos-detalhados div div h2{
