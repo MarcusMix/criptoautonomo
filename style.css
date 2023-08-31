@@ -194,10 +194,6 @@ main {
 	transition: all 0.3s ease 0s;
 }
 
-.buy-disable {
-	background: var(--cor-botao-disable);
-}
-
 .buy:hover {
 	box-shadow: 0 7px 50px 10px #000000aa;
 	transition: .7s all;
@@ -206,6 +202,16 @@ main {
 
 .buy:active {
 	transform: translateY(-1px);
+}
+
+.buy-disable {
+	width: 90%;
+	margin: 10px;
+	align-self: baseline;
+	border: none;
+	background: var(--cor-botao);
+	border-radius: 25px;
+	box-shadow: 0 7px 50px 10px #000000aa;
 }
 
 .text-apresentation h1 {
@@ -392,6 +398,10 @@ main {
 	height: 710px;
 }
 
+#card-disable {
+	/* filter: grayscale(50%); */
+	filter: saturate(20%);
+}
 .card-head {
 	display: flex;
 	align-items: center;
