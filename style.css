@@ -63,7 +63,7 @@ header {
 	line-height: 0.8;
 }
 
-#h1-destaque, .motivos h1 {
+#h1-destaque, .motivos h1, .video h1 {
 	text-transform: uppercase;
 	background: -webkit-linear-gradient(#FFD60A, #ffc037);
 	-webkit-background-clip: text;
@@ -75,6 +75,16 @@ header {
 	font-size: 18px;
 	line-height: 0.3;
 }
+
+.video {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 300px;
+}
+
+
 
 .group-apresentation {
 	display: flex;
