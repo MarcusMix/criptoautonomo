@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 :root {
@@ -538,9 +540,22 @@ footer {
 	.professor img {
 		width: 450px;
 	}
+
+	header {
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 768px) {
+
+	header {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.container-xl {
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -590,7 +605,6 @@ footer {
 		font-size: var(--tamanho-fonte-muito-pequena);
 		width: 350px;
 		text-align: left;
-		/* padding-left: 10px; */
 	}
 
 	.image-apresentation {
