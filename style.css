@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 :root {
 	--cor-de-fundo: #000;
@@ -7,18 +6,18 @@
 	--cor-fonte-primaria: #fff;
 	--cor-fonte-secundária: #f7f7f7d2;
 	--cor-fonte-dark: #000;
-	--cor-fonte-destaque: #FFD60A;
-	--cor-botao: -webkit-linear-gradient(#FFD60A, #faad07);
+	--cor-fonte-destaque: #ffd60a;
+	--cor-botao: -webkit-linear-gradient(#ffd60a, #faad07);
 	--cor-botao-disable: -webkit-linear-gradient(#c0ac4b, #a07a2a);
-	--tamanho-fonte-grande: 2.3rem;
+	--tamanho-fonte-grande: 30px;
 	--tamanho-fonte-pequena: 1.5rem;
 	--tamanho-fonte-muito-pequena: 14px;
 	--tamanho-fonte-card: 0.9rem;
-	--espessura-fonte-grande: 700; 
+	--espessura-fonte-grande: 700;
 }
 
 * {
-	font-family: 'Outfit';
+	font-family: "Outfit";
 	padding: 0;
 	margin: 0;
 }
@@ -33,13 +32,13 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	background-image: url('img/wallpaper.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-image: url("img/wallpaper.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
-	box-shadow: -2px -7px 31px 36px rgba(0,0,0,0.84) inset;
-	-webkit-box-shadow: -2px -7px 31px 36px rgba(0,0,0,0.84) inset;
-	-moz-box-shadow: -2px -7px 31px 36px rgba(0,0,0,0.84) inset;
+	box-shadow: -2px -7px 31px 36px rgba(0, 0, 0, 0.84) inset;
+	-webkit-box-shadow: -2px -7px 31px 36px rgba(0, 0, 0, 0.84) inset;
+	-moz-box-shadow: -2px -7px 31px 36px rgba(0, 0, 0, 0.84) inset;
 }
 
 header {
@@ -63,9 +62,11 @@ header {
 	line-height: 0.8;
 }
 
-#h1-destaque, .motivos h1, .video h1 {
+#h1-destaque,
+.motivos h1,
+.video h1 {
 	text-transform: uppercase;
-	background: -webkit-linear-gradient(#FFD60A, #ffc037);
+	background: -webkit-linear-gradient(#ffd60a, #ffc037);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -77,18 +78,18 @@ header {
 }
 
 .video {
+	height: 70vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding-bottom: 300px;
 }
 
 .video h1 {
+	text-align: center;
 	margin-bottom: 20px;
 	font-weight: var(--espessura-fonte-grande);
 }
-
 
 .group-apresentation {
 	display: flex;
@@ -97,12 +98,12 @@ header {
 }
 
 .pin-icon {
-	display: flex; 
+	display: flex;
 	align-items: end;
 }
 
 header h3 {
-	font-size: var(--tamanho-fonte-muito-pequena)
+	font-size: var(--tamanho-fonte-muito-pequena);
 }
 
 .main-image {
@@ -147,6 +148,7 @@ header h3 {
 }
 
 .subtitle h1 {
+	text-align: center;
 	font-size: var(--tamanho-fonte-grande);
 	font-weight: var(--espessura-fonte-grande);
 	color: var(--cor-fonte-destaque);
@@ -212,7 +214,7 @@ main {
 
 .buy:hover {
 	box-shadow: 0 7px 50px 10px #000000aa;
-	transition: .7s all;
+	transition: 0.7s all;
 	transform: translateY(-7px);
 }
 
@@ -275,7 +277,6 @@ main {
 	color: var(--cor-fonte-primaria);
 }
 
-
 .motivos {
 	display: flex;
 	align-items: center;
@@ -285,9 +286,13 @@ main {
 	flex-direction: column;
 }
 
+.motivos h1 {
+	text-align: center;
+}
+
 .motivos-detalhados div div {
-	display: flex; 
-	flex-direction: row
+	display: flex;
+	flex-direction: row;
 }
 
 .professor {
@@ -306,7 +311,6 @@ main {
 
 .professor-imagem {
 	max-width: 100%;
-	
 }
 
 #apresentacao {
@@ -329,9 +333,9 @@ main {
 
 .image-cripto {
 	width: 100%;
-	background-image: url('img/criptomoeda.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-image: url("img/criptomoeda.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -367,9 +371,11 @@ main {
 }
 
 .duvidas-frequentes h1 {
+	text-align: center;
 	font-size: var(--tamanho-fonte-grande);
 	font-weight: var(--espessura-fonte-grande);
-	color: var(--cor-fonte-secundária);
+	color: var(--cor-fonte-destaque);
+	text-transform: uppercase;
 	padding: 20px;
 }
 
@@ -426,7 +432,7 @@ main {
 
 .card-head img {
 	width: 200px;
-	align-self:center;
+	align-self: center;
 }
 
 .preco {
@@ -477,8 +483,8 @@ main {
 }
 
 .sales-unsucess {
-	display: flex; 
-	flex-direction: column; 
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	margin-top: 50px;
 }
@@ -499,13 +505,13 @@ main {
 }
 
 .garantia {
-	display: flex; 
-	flex-direction: column; 
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	width: 750px;
 	margin: 0 auto;
-	margin-top:  40px;
+	margin-top: 40px;
 	background-color: #0f1116;
 	border-radius: 20px;
 }
@@ -534,13 +540,16 @@ footer {
 	}
 }
 
-
 @media screen and (max-width: 768px) {
 	.container-xl {
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.motivos h1 {
+		margin-top: 10px;
 	}
 
 	.video {
@@ -563,7 +572,7 @@ footer {
 		font-size: 30px;
 		line-height: 1;
 	}
-	
+
 	.text-apresentation p {
 		line-height: 1;
 		padding: 0;
@@ -573,7 +582,7 @@ footer {
 	.subtitle {
 		text-align: center;
 		font-size: 17px;
-		margin:  5px;
+		margin: 5px;
 		text-align: left;
 	}
 
@@ -621,7 +630,7 @@ footer {
 	.professor p {
 		padding: 0 20px;
 	}
-	
+
 	.professor h1 {
 		text-align: center;
 	}
@@ -640,11 +649,12 @@ footer {
 		width: 100vw;
 	}
 
-	.motivos h1,.motivos p {
+	.motivos h1,
+	.motivos p {
 		padding: 5px;
 	}
 
-	.motivos-detalhados div div h2{
+	.motivos-detalhados div div h2 {
 		font-size: var(--tamanho-fonte-pequena);
 	}
 
@@ -656,9 +666,8 @@ footer {
 		flex-wrap: nowrap;
 	}
 
-	.motivos-detalhados  {
+	.motivos-detalhados {
 		flex-direction: column;
 		padding: 10px;
 	}
-
 }
