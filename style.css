@@ -12,7 +12,7 @@
 	--cor-botao: -webkit-linear-gradient(#ffd60a, #faad07);
 	--cor-botao-disable: -webkit-linear-gradient(#c0ac4b, #a07a2a);
 	--tamanho-fonte-grande: 30px;
-	--tamanho-fonte-pequena: 1.5rem;
+	--tamanho-fonte-pequena: 24px;
 	--tamanho-fonte-muito-pequena: 14px;
 	--tamanho-fonte-card: 0.9rem;
 	--espessura-fonte-grande: 700;
@@ -91,6 +91,7 @@ header {
 	text-align: center;
 	margin-bottom: 20px;
 	font-weight: var(--espessura-fonte-grande);
+	font-size: var(--tamanho-fonte-grande);
 }
 
 .group-apresentation {
@@ -123,14 +124,6 @@ header h3 {
 	flex-direction: row;
 }
 
-.header-content h3 {
-	font-size: 15px;
-
-	@media (max-width: 768px) {
-		font-size: var(--tamanho-fonte-muito-pequena);
-		text-align: center;
-	}
-}
 
 .logo img {
 	height: 130px;
@@ -234,10 +227,6 @@ main {
 	box-shadow: 0 7px 50px 10px #000000aa;
 }
 
-.text-apresentation h1 {
-	font-size: var(--tamanho-fonte-grande);
-}
-
 .image-apresentation {
 	max-width: 600px;
 }
@@ -279,6 +268,10 @@ main {
 	color: var(--cor-fonte-primaria);
 }
 
+.emp-container p {
+	text-align: justify;
+}
+
 .motivos {
 	display: flex;
 	align-items: center;
@@ -286,6 +279,11 @@ main {
 	height: 250px;
 	width: 100%;
 	flex-direction: column;
+}
+
+.motivos p {
+	text-align: justify;
+	margin: 10px;
 }
 
 .motivos h1 {
@@ -321,6 +319,12 @@ main {
 
 #apresentacao div p {
 	text-align: justify;
+}
+
+#apresentacao div h1 {
+	color: var(--cor-fonte-destaque);
+	text-transform: uppercase;
+	font-size: var(--tamanho-fonte-grande);
 }
 
 .motivos p {
@@ -423,7 +427,6 @@ main {
 }
 
 #card-disable {
-	/* filter: grayscale(50%); */
 	filter: saturate(20%);
 }
 .card-head {
@@ -534,6 +537,25 @@ footer {
 	justify-content: center;
 	height: 120px;
 	box-shadow: rgba(0, 0, 0, 0.05) 2px 1px 2px 2px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--cor-fonte-dark);
+}
+
+a:hover {
+	transition: 200ms;
+	color: var(--cor-fonte-primaria);
+}
+
+.header-content h3 {
+	font-size: 15px;
+
+	@media (max-width: 768px) {
+		font-size: var(--tamanho-fonte-muito-pequena);
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 1215px) {
