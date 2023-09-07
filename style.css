@@ -440,16 +440,13 @@ main {
 	align-self: center;
 }
 
-.preco {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	gap: 5px;
-}
-
 .preco span {
 	font-size: 20px;
+}
+
+.price-change {
+	margin-top: 25px;
+	text-align: end;
 }
 
 .old-price {
@@ -459,11 +456,23 @@ main {
 	font-size: 25px;
 }
 
+.change {
+	margin-top: 25px;
+}
+
 #new-price {
 	color: var(--cor-fonte-destaque);
 	font-size: 50px;
 	font-weight: var(--espessura-fonte-grande);
 	text-align: center;
+}
+
+.preco {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 5px;
 }
 
 .card-head h3 {
